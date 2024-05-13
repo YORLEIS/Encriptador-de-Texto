@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="general">
+    <header>
+        <h1>Encriptador De Texto</h1>
+     </header>
+ 
+     <div class="contenedor">
+        
+            <section class="contenido">
+                <textarea name="contenido"  id="campo-encriptado" placeholder="Ingrese el texto Aqui"></textarea>
+     
+                 <p id="aviso"><i class="fa fa-ban" style="font-size:25px"></i>Solo letras minúsculas y sin acentos</p>
+         
+                 <div class="botones">
+                     <button class="btn" id="btn-enc">Encriptar</button>
+                     <button class="btn" id="btn-desen">Desencriptar</button>
+                 </div> 
+         
+             </section>
+         
+             <section class="resultado">
+                    <textarea name="" id="caja-resultado" cols="30" rows="10" readonly></textarea>
+                     <h2 id="no-messages"> Ningún mensaje fue encontrado</h2>
+                     <p id="mensaje" style="display: none;">Ingresa el texto que deseas encriptar y desencriptar</p>
+                     <button  class="btn botones" id="btn-copiar" style="display: none;">Copiar Texto</button>
+
+                   
+                 
+             </section>
+        
+        
+     </div>
+  </main>
+   
+   <script src="app.js"></script>
+
+    
+</body>
+</html>
